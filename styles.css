@@ -1,0 +1,304 @@
+:root {
+    --main-background: #161923;
+    --grey-text: #A8A9BB;
+    --primary: #51CAB4;
+    --secondary-background: #2b77a03f;
+    --primary-background: #51cab467;
+}
+
+* {
+    color: var(--grey-text);
+    font-family: Consolas, Monaco, monospace;
+}
+
+html, body {
+    background-color: var(--main-background);
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+i {
+    background-color: transparent;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--main-background);
+    transition: all 0.35s ease-in-out;
+}
+
+.introduction-section {
+    margin-top: 220px;
+    margin-bottom: 280px;
+    padding: 50px;
+}
+
+.testimonial-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+/*===================*/
+/* TEXT
+/*===================*/
+.primary-text-background {
+    background-color: var(--primary-background);
+    border-radius: 10px;
+}
+.secondary-text-background {
+  background-color: var(--secondary-background);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 32px;
+}
+.sub-title {
+  font-size: 18px;
+}
+.primary-text-color {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+
+/*===================*/
+/* BUTTONS
+/*===================*/
+.social-link {
+    background-color: var(--secondary-background);
+    border: 1px solid transparent;
+    color: var(--primary);
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+.social-link:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.social-link:hover i {
+    color: var(--primary);
+}
+.testimonial-btn:hover i {
+    color: var(--primary);
+}
+
+/*===================*/
+/* FLOATING BUTTON
+/*===================*/
+.link{
+	padding: 7px 30px;
+	margin: 10px;
+	display: inline-block;
+	color: var(--primary);
+	background: var(--primary);
+  text-decoration: none;
+}
+.link:hover{
+	text-decoration: none;
+	color: var(--main-background);
+}
+.float-on-hover {
+    margin: 0;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.float-on-hover:hover, .float-on-hover:focus, .float-on-hover:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    border: 0px solid transparent;
+    background-color: var(--primary);
+}
+.float-on-hover i {
+    color: var(--primary);
+}
+.float-on-hover:hover i {
+    color: #161923;
+}
+.float-on-hover:active i {
+    color: #161923;
+}
+.float-on-hover a {
+    color: var(--primary);
+}
+.float-on-hover:hover a {
+    color: #161923;
+}
+.float-on-hover:active a {
+    color: #161923;
+}
+
+/*===================*/
+/* CAROUSEL SKILLS
+/*===================*/
+.skills-title {
+  margin-bottom: -70px;
+}
+.carousel-item {
+    padding: 20px 0;
+}
+.carousel-item i {
+    color: var(--primary);
+}
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--grey-text);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.carousel-title {
+    color: var(--primary);
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--grey-text);
+}
+
+
+/*===================*/
+/* PROJECTS
+/*===================*/
+.projects-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.project-item img {
+    border-radius: 10px;
+}
+.project-item h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+}
+.project-item p {
+    font-size: 16px;
+    color: var(--grey-text);
+}
+
+
+/*===================*/
+/* ABOUT
+/*===================*/
+.about-section {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.my-card {
+    border-radius: 10px;
+    background-color: rgba(43, 119, 160, 0.1);
+}
+
+
+/*===================*/
+/* ANIMATION
+/*===================*/
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.4s ease-in;
+}
+  
+.fade-in.visible {
+    opacity: 1;
+}
+  
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+  
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+  
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+/*===================*/
+/* FOOTERS
+/*===================*/
+
+.footer {
+    margin-top: 50px;
+    background-color: var(--secondary-background);
+}
+
+.xp-footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.xp-footer a:hover {
+    color: var(--primary);
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.footer a:hover {
+    color: var(--primary);
+}
