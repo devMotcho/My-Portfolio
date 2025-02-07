@@ -8,8 +8,10 @@
 
     <!-- Tags -->
     <title>Portfolio Bernardo Mamede</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
     <!-- Custom Css -->
+    <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./timeline.css">
 
@@ -22,7 +24,40 @@
     <!-- Chart Js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/owl.png" alt="Motcho" class="ms-4" style="height: 30px; width: 30px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#">1. Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#about-section">2. About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#skills-section">3. Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#projects-section">4. Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#experience-section">5. Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#testimonials-section">6. Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="wrapper">
         <div class="main">
             <!-- Introduction -->
@@ -256,9 +291,9 @@
                                 <h5 class="text-white">Rodízio Ementa Digital</h5>
                                 <p class="text-grey" style="font-size: 13px;">
                                     <span class="primary-text-background text-white">
-                                        A Mobile Application and its Management System</span> that offers push notifications, payment integration, dish display and daily menu scheduling, shopping cart, latest news, customer support contact, email sending, and secure authentication using OAuth2 and standard login. Password encryption is implemented with SHA256.
+                                        A Mobile Application and its Management System</span> that offers push notifications, payment integration, dish display and daily menu scheduling, shopping cart, latest news, customer support contact, email sending, points system and secure authentication using OAuth2 and standard login.
                                         <br>
-                                        Developed using .NET, MAUI, Python Django, REST API, S3 bucket, Railway, and many more technologies.
+                                        Developed using C#, .NET, MAUI, Python, Django, REST API, S3 bucket, Railway...
                                     </span>
                                 </p>
 
@@ -351,11 +386,12 @@
             </div>
             <!-- End Projects Section -->
 
+            <div id="experience-section"></div>
             <div class="xp-section">
                 <div class="container">
                     <h3 class="text-center primary-text-color title fade-in my-4">Experience</h3>
                     <hr>
-                    <ul>
+                    <ul class="timeline">
                         <li class="slide-in-left" style="--accent-color:#2b77a03f">
                             <div class="date">08/2023 - NOW</div>
                             <div class="sub-title mt-4 primary-text-color">FREELANCER</div>
@@ -369,7 +405,6 @@
                                 <p>Automation of daily tasks with SQL reusable queries and php scripts.</p>
                                 <p>Design, Develop, Test and Deploy Webpages and Ecommerce's with Wordpress, MariaDB and CPanel.</p>
                                 <div class="xp-footer">
-                                    <a href="https://euricoececilia.pt/">Eurico & Cecilia</a> |
                                     <a href="https://intercredito.pt/">Intercrédito</a> |
                                     <a href="https://cacisport.pt/">Cacisport</a>
                                 </div>
