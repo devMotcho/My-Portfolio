@@ -103,10 +103,16 @@ img {
     background-color: var(--secondary-background);
     border: 1px solid transparent;
     color: var(--primary);
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border-radius: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
 }
 .social-link:hover {
     border-color: var(--primary);
@@ -154,7 +160,6 @@ img {
 .float-on-hover:hover, .float-on-hover:focus, .float-on-hover:active {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
-    border: 0px solid transparent;
     background-color: var(--primary);
 }
 .float-on-hover i {
